@@ -1,0 +1,29 @@
+body {
+    background-color: #FAD9C7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 3px;
+    border: 2px solid #4C2224;
+}
+
+table tr:hover, tr:nth-of-type(1) {
+    background-color: #7C1113;
+    color: #fff;
+    font-weight: bold;
+}
+
+th:nth-child(3){
+    min-width: 80px;
+}
+
+th:nth-child(4){
+    min-width: 120px;
+}
+

@@ -169,7 +169,7 @@ foreach ($students as $class => $all) {
             <td> <?= $student["code"] ?></td>
             <td> <?= mb_strtoupper($student["first_name"]) ?> </td>
             <td> <?= mb_strtoupper($student["last_name"]) ?> </td>
-            <td><?= round(array_sum($student["marks"]) / count($student["marks"])) ?> </td>
+            <td> <?= round(array_sum($student["marks"]) / count($student["marks"])) ?> </td>
             <td> <?= $student["date"] ?> </td>
         </tr>
 <?php endforeach;
