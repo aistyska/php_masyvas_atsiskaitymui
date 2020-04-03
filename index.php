@@ -162,10 +162,15 @@ $students = [
     </tr>
 
 <?php
-foreach ($students as $class => $all) {
+foreach ($students as $class => $all):?>
+    <tr>
+        <td> <?= $class; ?> </td>
+        <td colspan="5"></td>
+    </tr>
+    <?php
     foreach ($all as $student) :?>
         <tr>
-            <td> <?= $class; ?> </td>
+            <td>  </td>
             <td> <?= $student["code"] ?></td>
             <td> <?= mb_strtoupper($student["first_name"]) ?> </td>
             <td> <?= mb_strtoupper($student["last_name"]) ?> </td>
@@ -173,7 +178,7 @@ foreach ($students as $class => $all) {
             <td> <?= $student["date"] ?> </td>
         </tr>
 <?php endforeach;
-    }?>
+    endforeach;?>
 </table>
 </body>
 </html>
